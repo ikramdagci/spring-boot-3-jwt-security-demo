@@ -1,4 +1,4 @@
-package com.ikramdagci.security.config;
+package com.ikramdagci.security.service;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

@@ -1,5 +1,9 @@
-package com.ikramdagci.security.auth;
+package com.ikramdagci.security.controller.auth;
 
+import com.ikramdagci.security.model.auth.request.AuthenticationRequest;
+import com.ikramdagci.security.model.auth.request.RegisterRequest;
+import com.ikramdagci.security.model.auth.response.AuthenticationResponse;
+import com.ikramdagci.security.service.auth.AuthenticationService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

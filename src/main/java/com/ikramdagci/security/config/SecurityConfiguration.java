@@ -1,6 +1,6 @@
 package com.ikramdagci.security.config;
 
-import jakarta.servlet.Filter;
+import com.ikramdagci.security.component.JwtAuthenticationFilter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

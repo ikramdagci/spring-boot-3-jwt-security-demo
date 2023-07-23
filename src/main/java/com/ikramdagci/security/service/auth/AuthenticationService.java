@@ -1,6 +1,9 @@
-package com.ikramdagci.security.auth;
+package com.ikramdagci.security.service.auth;
 
-import com.ikramdagci.security.config.JwtService;
+import com.ikramdagci.security.service.JwtService;
+import com.ikramdagci.security.model.auth.request.AuthenticationRequest;
+import com.ikramdagci.security.model.auth.request.RegisterRequest;
+import com.ikramdagci.security.model.auth.response.AuthenticationResponse;
 import com.ikramdagci.security.user.Role;
 import com.ikramdagci.security.user.User;
 import com.ikramdagci.security.user.UserRepository;

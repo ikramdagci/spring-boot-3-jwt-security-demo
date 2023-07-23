@@ -1,4 +1,4 @@
-package com.ikramdagci.security.demo;
+package com.ikramdagci.security.controller.demo;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

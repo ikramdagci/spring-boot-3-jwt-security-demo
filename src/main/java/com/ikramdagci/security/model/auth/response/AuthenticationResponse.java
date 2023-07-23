@@ -1,4 +1,4 @@
-package com.ikramdagci.security.auth;
+package com.ikramdagci.security.model.auth.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
