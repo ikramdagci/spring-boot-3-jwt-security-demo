@@ -1,5 +1,6 @@
 package com.ikramdagci.security.model.auth.request;
 
+import com.ikramdagci.security.user.Role;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -15,4 +16,5 @@ public class RegisterRequest {
     private String lastname;
     private String email;
     private String password;
+    private Role role;
 }

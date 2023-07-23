@@ -4,7 +4,6 @@ import com.ikramdagci.security.service.JwtService;
 import com.ikramdagci.security.model.auth.request.AuthenticationRequest;
 import com.ikramdagci.security.model.auth.request.RegisterRequest;
 import com.ikramdagci.security.model.auth.response.AuthenticationResponse;
-import com.ikramdagci.security.user.Role;
 import com.ikramdagci.security.user.User;
 import com.ikramdagci.security.user.UserRepository;
 import lombok.RequiredArgsConstructor;
@@ -29,7 +28,7 @@ public class AuthenticationService {
                 .lastname(registerRequest.getLastname())
                 .email(registerRequest.getEmail())
                 .password(passwordEncoder.encode(registerRequest.getPassword()))
-                .role(Role.USER)
+                .role(registerRequest.getRole())
                 .build();
         userRepository.save(user);
         var jwtToken = jwtService.generateToken(user);
